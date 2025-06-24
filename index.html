@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Paschoal Assistência Odontológica</title>
+  <style>
+    body{font-family:Arial,sans-serif;margin:0;padding:0;color:#333;}
+    header{background:#006699;color:#fff;padding:1rem;text-align:center;}
+    nav{margin:10px;text-align:center;}
+    nav button{margin:5px;padding:10px 15px;border:none;border-radius:4px;background:#004466;color:#fff;cursor:pointer;}
+    section{padding:2rem;display:none;}
+    section.active{display:block;}
+    footer{background:#eee;text-align:center;padding:1rem;margin-top:2rem;}
+    .btn{display:inline-block;margin-top:10px;padding:10px 20px;background:#006699;color:#fff;border:none;border-radius:4px;text-decoration:none;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Paschoal Assistência Odontológica</h1>
+    <nav>
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('sobre')">Sobre</button>
+      <button onclick="showSection('servicos')">Serviços</button>
+      <button onclick="showSection('contato')">Contato</button>
+    </nav>
+  </header>
+
+  <section id="home" class="active">
+    <h2>Bem-vindo ¡</h2>
+    <p>Clínica odontológica voltada para consultas, tratamentos e atendimentos móveis em Teresópolis/RJ.</p>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>A Valerio Paschoal B. Antunes Assistência Odontológica atua desde 2013 com foco em atendimento clínico direto e em domicílio, oferecendo soluções preventivas e de emergência odontológica na região da Várzea, em Teresópolis.</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <ul>
+      <li>Consultas odontológicas presenciais e a domicílio</li>
+      <li>Limpeza, profilaxia e restaurações</li>
+      <li>Tratamento de canal (endodontia)</li>
+      <li>Extrações e procedimentos de emergência</li>
+      <li>Atendimento móvel com equipe especializada</li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p><strong>Endereço:</strong> Avenida Almirante Lúcio Meira, 330, Sala 305, Várzea, Teresópolis – RJ, CEP 25953‑000</p>
+    <p><strong>WhatsApp:</strong> <a href="tel:+552126414619">(21) 2641‑4619</a></p>
+    <a class="btn" href="https://wa.me/552126414619" target="_blank">Fale via WhatsApp</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Paschoal Assistência Odontológica | CNPJ 19.119.678/0001‑16
+  </footer>
+
+  <script>
+    function showSection(id){
+      document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
